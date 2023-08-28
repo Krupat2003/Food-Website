@@ -1,0 +1,277 @@
+ @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ h1 {
+     font-family: 'Abel', sans-serif;
+     font-weight: bold;
+     color: #fc036b;
+     font-size: 1.8rem !important;
+     font-style: italic;
+ }
+
+ /* navbar start  */
+ .navbar {
+     background-color: transparent !important;
+ }
+
+ .navbar-brand {
+     font-style: italic;
+     font-weight: 500;
+     font-size: 1.8rem;
+ }
+
+ .active {
+     color: #fc036b !important;
+ }
+
+ /* navbar end  */
+
+ /* main section start  */
+ .space {
+     margin-top: 15%;
+     text-align: center;
+     justify-content: center;
+ }
+
+ .card-img-overlay h1,
+ h4,
+ p {
+     color: aliceblue;
+     font-weight: bolder;
+ }
+
+ .btn {
+
+     color: aliceblue !important;
+     background-color: #fc036b !important;
+     font-weight: 400 !important;
+     border: 1px solid #fc036b !important;
+     transition: 0.4s !important;
+     border-radius: 4px !important;
+
+ }
+
+ .btn:hover {
+     background-color: transparent !important;
+     color: #fc036b !important;
+ }
+
+ /* main section  end  */
+
+ /* Features start  */
+ .card {
+     border: hidden !important;
+     padding: 0 25px !important;
+ }
+
+ .card-body i {
+     text-align: center;
+     font-size: 1.7rem;
+     font-weight: 900;
+     color: #fc036b;
+     padding-bottom: 13px;
+ }
+
+ .card-body p {
+     color: rgb(97, 96, 96);
+     font-size: 1rem;
+     font-weight: 400;
+     /* padding-top: 5px; */
+ }
+
+ /* Features end  */
+
+ /* about as start */
+ .card-body h1 {
+     text-align: center !important;
+     color: #fc036b;
+     padding-bottom: 10px;
+ }
+
+ .abt-address {
+     display: flex;
+ }
+
+ .abt-add {
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     width: 40%;
+     border: 1px solid black;
+
+ }
+
+ .abt-phone {
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     width: 40%;
+     border: 1px solid black;
+ }
+
+ .abt-table {
+     padding-top: 10px;
+     border: 1px solid rgb(97, 96, 96);
+     /* width: 100%; */
+     height: 50px;
+ }
+
+ .abt-heding {
+     font-size: 1.7rem;
+ }
+
+ /* about as end */
+
+ /* menu start */
+ .menu-text {
+     color: rgb(97, 96, 96);
+     font-size: 1rem;
+     font-weight: 400;
+     text-align: center;
+     padding: 10px 20%;
+ }
+
+ .line {
+     width: 120px;
+     height: 4px;
+     background: #fc036b;
+     margin: 10px auto;
+     border-radius: 5px;
+ }
+
+ /* menu end  */
+
+ /* Testimonial start */
+ .review img {
+     width: 100px;
+     height: 100px;
+     border: 1px solid rgb(246, 241, 241);
+     padding: 8px;
+     border-radius: 50%;
+ }
+
+ .ret i {
+     padding-top: 10px;
+     font-size: 1rem;
+ }
+
+ /* Testimonial end  */
+
+
+ /* footer start  */
+ footer.footer {
+     height: 100%;
+     background: #0f0f0f;
+     position: relative;
+ }
+
+ footer.footer .container {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+ }
+
+ footer.footer .container>div {
+     flex-grow: 1;
+     flex-basis: 0;
+     padding: 3rem 0.9rem;
+ }
+
+ footer.footer .container h2 {
+     color: white;
+     font-size: 1.5rem;
+     padding-bottom: 5px;
+ }
+
+ footer.footer .container p {
+     color: rgb(97, 96, 96);
+     font-size: 0.85rem;
+ }
+
+ footer.footer .newsletter .form-element {
+     background: #0f0f0f;
+     display: inline-block;
+ }
+
+ footer.footer .newsletter .form-element input {
+     padding: 0.5rem 0.7rem;
+     border: none;
+     background: transparent;
+     color: white;
+     font-size: 1rem;
+     width: 74%;
+ }
+
+ footer.footer .newsletter .form-element span {
+     background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+     padding: 0.5rem 0.7rem;
+     cursor: pointer;
+ }
+
+ footer.footer .instagram div>img {
+     display: inline-block;
+     width: 25%;
+     height: 50%;
+     margin: 0.3rem 0.4rem;
+ }
+
+ footer.footer .follow div i {
+     color: white;
+     padding: 0.4rem;
+ }
+
+
+ /* footer end  */
+
+
+
+
+
+ /* responsive  */
+ @media only screen and (max-width:850px) {
+     .navbar {
+         background-color: black !important;
+     }
+
+     .card-img-overlay {
+         display: none;
+     }
+
+     .abt-address{
+        display: none;
+     }
+
+ }
+
+ @media only screen and (max-width:920px) {
+     .navbar {
+         background-color: black !important;
+     }
+ }
+
+ @media only screen and (max-width: 1130px) {
+     footer.footer .container {
+         grid-template-columns: repeat(2, 1fr);
+     }
+ }
+
+ @media only screen and (max-width: 750px) {
+     footer.footer .container {
+         grid-template-columns: repeat(1, 1fr);
+     }
+ }
+
+ @media only screen and (max-width: 520px) {
+
+     footer.footer .container>div {
+         padding: 1rem 0.9rem !important;
+     }
+
+     footer .rights {
+         padding: 0 1.4rem;
+     }
+ }
